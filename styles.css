@@ -1,0 +1,169 @@
+/* Import Fonts */
+/* Grandstander, Inconsolata, Inter */
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* Kepler Std */
+@import url("https://fonts.cdnfonts.com/css/kepler-std-3");
+/* Reset default CSS styles for the application */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  z-index: 1000;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+   background-color: rgba(217, 217, 217, 0.7); /* 0.0 = transparent, 1.0 = solid */
+  position: sticky; 
+  top: 0;
+}
+
+.logo {
+  font-family: Inconsolata, monospace;
+}
+
+.logo b {
+  font-family: "Kepler Std", sans-serif;
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+  background-color: aliceblue;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Kepler Std", sans-serif;
+}
+
+.nav-bar {
+  background-color: rgba(217, 217, 217, 0.2); /* 0.0 = transparent, 1.0 = solid */
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  background-color: rgba(217, 217, 217, 0); /* 0.0 = transparent, 1.0 = solid */
+  padding: 20px;
+  font-size: 18px;
+  color: #020202;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center; /* Vertically center the links */
+  margin-right: 20px;
+  gap: 10px;
+}
+
+.nav-links img {
+  width: 35px;
+  height: 35px;
+}
+
+/* HERO SECTION */
+.hero {
+  background-color: #b2c4c7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.hero-text {
+  margin: 30px;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.hero-image {
+  background-color: #EEE8DC;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+/* PORTFOLIO CAROUSEL SECTION */
+.portfolio {
+  padding: 40px;
+  background-color: #EEE8DC;
+}
+
+.carousel-container {
+  background-color: #afbec1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: grab;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  padding: 40px;
+  background-color: #b2c4c7;
+}
+
+.about-text {
+  padding: 30px;
+  background-color: #EEE7DC;
+  border-radius: 10px;
+}
+
+.inline-texts {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+  background-color: #EEE8DC;
+  padding: 50px;
+}
+
+.contact-text {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-img {
+  width: 100px;
+  height: 100px;
+  background-color: #EEE7DC;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.forms {
+  margin-top: 30px;
+}
+
+.forms input, textarea {
+  font-family: Inconsolata, monospace;
+  margin: 5px 0px 0px 0px;
+
+}
+
+footer {
+  background-color: #b2c4c7;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
