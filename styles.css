@@ -107,9 +107,44 @@ h3 {
   display: none;
 }
 
+.numbertext {
+  display: none;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-button {
+  display: block;
+  margin: 15px auto 10px; 
+  padding: 6px 10px;
+  background-color: #EEE8DC; /* matches your about/contact bg */
+  color: #020202;
+  border: 1.5px solid #020202;
+  border-radius: 8px;
+  font-family: 'Inconsolata', monospace;
+  transition: all 0.4s ease;
+}
+
+.view-button:hover {
+  background-color: #d9d9d9;
+  color: #000;
+}
+
 .prev,
 .next {
   cursor: grab;
+}
+
+.images img {
+  width: 320px;
+  height: 200px;
+  border-radius: 10px;
 }
 
 /* ABOUT SECTION */
