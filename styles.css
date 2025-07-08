@@ -161,6 +161,22 @@ h3 {
 
 }
 
+/* FOOTER SECTION */
+
+.nav-stuff {
+  text-decoration: none;
+  color: #020202;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-stuff a {
+  text-decoration: none;
+  color: #020202;
+  padding: 15px;
+}
+
 footer {
   background-color: #b2c4c7;
   display: flex;
