@@ -1,0 +1,16 @@
+button {
+
+    padding: 100px;
+    background-color: rgb(174, 174, 174);
+    border-top: 10px solid white;
+    border-left: 10px solid white;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+button:active{
+    border-top: 10px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid white;
+    border-bottom: 10px solid white;
+}

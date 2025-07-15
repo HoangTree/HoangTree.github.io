@@ -66,26 +66,32 @@ h3 {
 .hero {
   background-color: #b2c4c7;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 30px;
-}
-
-.hero-text {
-  margin: 30px;
+  height: 100vh;    
 }
 
 .hero-text h1 {
-  font-size: 50px;
+  position: relative;
+  left: 30vw;
+  font-size: 100px;
   font-style: italic;
   font-weight: 600;
+  z-index: 999;
+}
+
+.hero-text p {
+  position: relative;
+  left: 30vw;
+  font-size: 1.5em;
 }
 
 .hero-image {
+  position: relative;
+  left: 25vw;
   background-color: #EEE8DC;
   border-radius: 10px;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
 }
 
 /* PORTFOLIO CAROUSEL SECTION */
@@ -93,10 +99,6 @@ h3 {
   padding: 30px;
   background-color: #EEE8DC;
   text-align: center;
-}
-
-.portfolio h2 {
-  padding-bottom: 20px;
 }
 
 .carousel-container {
@@ -108,9 +110,16 @@ h3 {
   padding: 20px 0px;
 }
 
+.portfolio h2 {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
 .mySlides {
   display: none;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease;
 }
 
 /* Fading animation */
@@ -133,29 +142,35 @@ h3 {
 .caption {
   display: flex;
   justify-content: center;
+  padding-top: 10px;
   align-items: center;
 }
 
 .view-button {
-  display: block;
-  margin: 15px auto 10px; 
-  padding: 6px 10px;
-  background-color: #EEE8DC; /* matches your about/contact bg */
-  color: #020202;
-  border: 1.5px solid #020202;
-  border-radius: 8px;
-  font-family: 'Inconsolata', monospace;
-  transition: all 0.4s ease;
+  margin: 15px 0px 15px 0px;
+  font-family: Inconsolata, monospace;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  background-color: #EEE8DC;
+  border-radius: 15px;
+  border: 1px solid #020202;
 }
 
 .view-button:hover {
-  background-color: #d9d9d9;
-  color: #000;
+  background-color: #9ea3a4;
+  color: #fff;
+  border: 1px solid #9ea3a4;
+  transition: all 0.5s ease;
 }
 
 .prev,
 .next {
   cursor: grab;
+  background-color: #EEE8DC;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #020202;
 }
 
 .images img {
@@ -172,18 +187,61 @@ h3 {
 }
 
 .about-text {
-  padding: 30px;
+  padding: 10px 100px;
   background-color: #EEE7DC;
   border-radius: 10px;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .inline-texts {
   display: flex;
   justify-content: center;
   gap: 30px;
+  margin-top: 20px;
 }
 
+.about-title {
+  padding: 10px;
+  font-size: 24px;
+  font-style: italic;
+}
+
+div[class= "about-paragraph"] p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.about-button{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-btn {
+  font-family: Inconsolata, monospace;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  background-color: #EEE8DC;
+  border-radius: 15px;
+  border: 1px solid #020202;
+}
+
+.about-btn:hover {
+  background-color: #b2c4c7;
+  color: #fff;
+  border: 1px solid #b2c4c7;
+  transition: all 0.5s ease;
+}
 /* CONTACT SECTION */
+
+.contact h2 {
+  padding-bottom: 30px;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
 
 .contact {
   background-color: #EEE8DC;
@@ -192,13 +250,13 @@ h3 {
 
 .contact-text {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 .contact-img {
-  width: 100px;
-  height: 100px;
-  background-color: #EEE7DC;
+  width: 200px;
+  height: 200px;
+  background-color: #b2c4c7;
   border-radius: 10px;
   margin-top: 5px;
 }
@@ -207,10 +265,60 @@ h3 {
   margin-top: 30px;
 }
 
-.forms input, textarea {
+.forms input {
   font-family: Inconsolata, monospace;
-  margin: 5px 0px 0px 0px;
+  margin: 5px 0px 10px 0px;
+  background-color: transparent;
+  border: 1px solid #020202;
+  border-radius: 2px;
+  padding: 5px;
+}
 
+textarea {
+  padding: 5px;
+  margin: 5px 0px 5px 0px;
+  width: 300px;
+  height: 100px;
+  font-family: Inconsolata, monospace;
+  background-color: transparent;
+  border: 1px solid #020202;
+  border-radius: 2px;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+  border: 1px solid #b2c4c7;
+  border-radius: 3px;
+}
+
+label {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+label:hover {
+  color: #b2c4c7;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"] {
+  font-family: Inconsolata, monospace;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  background-color: #EEE8DC;
+  border-radius: 15px;
+  border: 1px solid #020202;
+}
+
+input[type="submit"]:hover {
+  background-color: #b2c4c7;
+  color: #fff;
+  border: 1px solid #b2c4c7;
+  transition: all 0.5s ease;
 }
 
 /* FOOTER SECTION */
@@ -229,9 +337,19 @@ h3 {
   padding: 15px;
 }
 
+.nav-stuff a:hover {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
 footer {
   background-color: #b2c4c7;
   display: flex;
   justify-content: space-between;
   padding: 0px;
+}
+
+.nav-links img:hover {
+  filter: invert(100%);
+  transition: all 0.3s ease;
 }
